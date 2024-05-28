@@ -40,7 +40,7 @@ const Menu = ({setshowCart,showCart}) => {
       {data.map((item, index) => {
         return (
           <div key={index}>
-            <Card data={item} setdata={setdata}  />
+            <Card data={item} setdata={setdata} setshowCart={setshowCart}  />
           </div>
         );
       })}

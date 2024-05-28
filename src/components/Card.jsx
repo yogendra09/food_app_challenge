@@ -3,14 +3,14 @@ import { IoMdAdd } from "react-icons/io";
 import { FiMinus } from "react-icons/fi";
 import { useDispatch, useSelector } from "react-redux";
 import { addItem, removeItem } from "../../store/Reducers/cartReducer";
-const Card = ({ data ,setdata}) => {
+const Card = ({ data ,setdata,setshowCart}) => {
   const { cart } = useSelector((state) => state.cartReducer);
 
   const dispatch = useDispatch();
 
    
   return (
-    <div className="h-[55vh] w-[22vw] bg-gray-200 flex flex-col justify-between py-2 px-3 shadow-lg">
+    <div className="h-[55vh] w-[90vw] lg:w-[22vw]  bg-gray-200 flex flex-col justify-between py-2 px-3 shadow-lg">
       <div className="h-[32vh] w-[full]">
         <img src={data.image} alt="" className="h-full w-full object-cover" />
       </div>
@@ -23,6 +23,8 @@ const Card = ({ data ,setdata}) => {
         <div
           onClick={() => {
             dispatch(addItem({ ...data }));
+            setshowCart(true)
+            
           }}
           className="bg-[#3F51B5] p-1"
         >
