@@ -35,7 +35,7 @@ const Signup = () => {
       <div className="bg-red-200 w-[40vw]">
         <form
           onSubmit={signupHandler}
-          className="flex flex-col gap-2 bg-slate-600 p-2"
+          className="flex flex-col gap-2 bg-slate-300 p-2"
         >
           <input
             value={email}
@@ -64,7 +64,7 @@ const Signup = () => {
           <button className="bg-blue-500 text-white px-4 py-1 ">
             Register
           </button>
-          <p className="text-lg  text-white">
+          <p className="text-lg  text-gray-500">
             <Link to={"/login"}>Login</Link>
           </p>
         </form>

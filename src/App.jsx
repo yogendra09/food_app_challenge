@@ -7,6 +7,7 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Checkout from "./pages/Checkout";
 import PrivateRoutes from "./components/PrivateRoutes"
+import Footer from "./components/Footer";
 const App = () => {
   const [showCart, setshowCart] = useState(false)
 
@@ -24,6 +25,7 @@ const App = () => {
           <Route path="/signup" element={<Signup />} />
         </Routes>
       </BrowserRouter>
+      <Footer/>
     </div>
   );
 };

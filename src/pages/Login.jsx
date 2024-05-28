@@ -43,7 +43,7 @@ const Login = () => {
       <div className="bg-red-200 w-[40vw]">
         <form
           onSubmit={loginHandler}
-          className="flex flex-col gap-2 bg-slate-600 p-2"
+          className="flex flex-col gap-2 bg-slate-300 p-2"
         >
           <input
             value={email}
@@ -62,7 +62,7 @@ const Login = () => {
             required={true}
           />
           <button className="bg-blue-500 text-white px-4 py-1 ">Login</button>
-          <p className="text-lg text-white">
+          <p className="text-lg text-gray-500">
             <Link to={"/signup"}>register</Link>
           </p>
         </form>
