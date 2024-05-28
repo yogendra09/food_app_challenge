@@ -9,4 +9,4 @@ Currently, two official plugins are available:
 
 // user authentication and authorization using localStorage 
 // add item to cart , remove item from cart
-
+// total price  
